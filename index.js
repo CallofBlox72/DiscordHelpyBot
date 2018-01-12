@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const Token = "NDAwMzQ2OTA5MTk1MzcwNDk2.DTpW4A.HVghY5kfcYih8pVBzBSi8RVdGWE";
-const Prefix = "."
+const Prefix = "h-"
 
 var bot = new Discord.Client();
 
@@ -28,9 +28,9 @@ bot.on("message", function(message) {
         case "cmds":
             var embed = new Discord.RichEmbed()
                 .setDescription("Here´s A List Of Commands I Have Been Programmed To Perform:")
-                .addField(".cmds", "Gives A List Of Commands")
-                .addField(".help", "Gives Some Information About The Bot")
-                .addField(".gotw", "Shows The Game Of The Week")
+                .addField("h-cmds", "Gives A List Of Commands")
+                .addField("h-help", "Gives Some Information About The Bot")
+                .addField("h-gotw", "Shows The Game Of The Week")
             message.channel.send(embed);
     }
 });
